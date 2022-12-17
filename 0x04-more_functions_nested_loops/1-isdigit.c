@@ -2,9 +2,11 @@
 #include <stdio>
 
 /**
- * _isdigit: check for digits from 0 through to 9
+ * isdigit: check for digits ( 0 through 9)
  *
+ * Desc: checks for digits
  * @c: input
+ *
  * Return: 1 if c is digit, otherwise 0
  */
 
