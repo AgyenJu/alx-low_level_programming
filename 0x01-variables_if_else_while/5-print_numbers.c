@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int sgDig = 0;
+	int sgDig;
 
-	for (; sgDig <= 0; sgDigit++)
+	for (sgDig = 0; sgDig <= 10; sgDigit++)
 		printf("%d", sgDigit);
 	putchar('\n');
 
