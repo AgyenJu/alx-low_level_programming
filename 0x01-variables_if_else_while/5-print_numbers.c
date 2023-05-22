@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int sgDig;
+	int a;
 
-	for (sgDig = 0; sgDig <= 10; sgDigit++)
-		printf("%d", sgDigit);
+	for (a = 0; a < 10; a++)
+		printf("%d", a);
 	putchar('\n');
 
 	return (0);
