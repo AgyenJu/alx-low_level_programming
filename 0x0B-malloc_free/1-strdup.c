@@ -10,22 +10,36 @@
 
 char *_strdup(char *str)
 {
-	char *dup;
-	unsigned int len, i;
+	char *dul;
+	void *val = NULL;
+	int n = 0, i = 0;
 
-	if (str == NULL)
-		return (NULL);
-
-	for (len = 0; str[len]; len++);
-
-	dup = (char *)malloc(sizeof(char) * (len + 1));
-	if (dup == NULL)
+	if (str != NULL)
 	{
-		return (NULL);
+		while (str[n] != 0)
+		{
+			n++;
+		}
 	}
-	for (i = 0; i <= len; i++)
+	else
 	{
-		dup[i] = str[i];
+		return (val);
 	}
-	return (dup);
+
+	dul = malloc(sizeof(char) * (n + 1));
+
+	if (dul == NULL)
+	{
+		return (0);
+	}
+	else
+	{
+		while (i <= n)
+		{
+			dul[i] = str[i];
+			i++;
+		}
+		return (dul);
+	}
+	return (0);
 }
